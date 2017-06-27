@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Get rid of Lineage repos -->
+    <remove-project name="LineageOS/android_system_bt" />
+    <remove-project name="LineageOS/android_packages_apps_Bluetooth" />
+
+    <!-- Track our repos -->
+    <project path="system/bt" name="jedld/system_bt" />
+    <project path="packages/apps/Bluetooth" name="jedld/packages_apps_Bluetooth" />
+    <project path="hardware/sprd" name="jedld/hardware_sprd" revision="preformance_2"/>
+    <project path="device/samsung/gtexslte" name="jedld/device_samsung_gtexslte" revision="cm-14.1"/>
+    <project path="vendor/samsung/gtexslte" name="jedld/vendor_samsung_gtexslte" />
+</manifest>

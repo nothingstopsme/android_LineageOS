@@ -508,4 +508,7 @@
 
   <include name="snippets/cm.xml" />
 
+  <!-- Samsung gtexslte  -->
+  <include name="snippets/gtexslte.xml" />
+
 </manifest>
