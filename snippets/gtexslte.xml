@@ -10,4 +10,5 @@
     <project path="hardware/sprd" name="jedld/hardware_sprd" revision="preformance_2"/>
     <project path="device/samsung/gtexslte" name="jedld/device_samsung_gtexslte" revision="cm-14.1"/>
     <project path="vendor/samsung/gtexslte" name="jedld/vendor_samsung_gtexslte" />
+    <project path="kernel/samsung/gtexslte" name="jedld/kernel_samsung_gtexslte" />
 </manifest>
