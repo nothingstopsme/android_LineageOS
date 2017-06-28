@@ -18,7 +18,7 @@
     <project path="vendor/samsung/gtexslte" name="jedld/vendor_samsung_gtexslte" remote="github" />
     <project path="kernel/samsung/gtexslte" name="jedld/kernel_samsung_gtexslte" remote="github" revision="preformance_2"/>
     <project path="bionic" name="jedld/android_bionic" revision="gtexslte" remote="github"/>
-    <project path="frameworks/base" name="jedld/android_frameworks_base" remote="github" revision="cm-14.1"/>
+    <project path="frameworks/base" name="jedld/android_frameworks_base-1" remote="github" revision="cm-14.1"/>
     <project path="frameworks/av" name="jedld/android_frameworks_av" remote="github" revision="cm-14.1"/>
     <project path="frameworks/native" name="jedld/android_frameworks_native" remote="github" revision="cm-14.1"/>
     <project path="system/core" name="jedld/android_system_core" remote="github" revision="cm-14.1" />
