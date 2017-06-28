@@ -11,11 +11,11 @@
     <remove-project name="LineageOS/android_external_icu" />
 
     <!-- Track our repos -->
-    <project path="system/bt" name="jedld/system_bt" />
-    <project path="packages/apps/Bluetooth" name="jedld/packages_apps_Bluetooth" remote="github" />
+    <project path="system/bt" name="jedld/system_bt" remote="github" revision="master"/>
+    <project path="packages/apps/Bluetooth" name="jedld/packages_apps_Bluetooth" remote="github" revision="master"/>
     <project path="hardware/sprd" name="jedld/hardware_sprd" remote="github" revision="performance_2"/>
     <project path="device/samsung/gtexslte" name="jedld/device_samsung_gtexslte" remote="github" revision="cm-14.1"/>
-    <project path="vendor/samsung/gtexslte" name="jedld/vendor_samsung_gtexslte" remote="github" />
+    <project path="vendor/samsung/gtexslte" name="jedld/vendor_samsung_gtexslte" remote="github" revision="master"/>
     <project path="kernel/samsung/gtexslte" name="jedld/kernel_samsung_gtexslte" remote="github" revision="performance_2"/>
     <project path="bionic" name="jedld/android_bionic" revision="gtexslte" remote="github"/>
     <project path="frameworks/base" name="jedld/android_frameworks_base-1" remote="github" revision="cm-14.1"/>
