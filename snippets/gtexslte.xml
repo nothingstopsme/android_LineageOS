@@ -10,7 +10,7 @@
     <remove-project name="LineageOS/android_system_core" />
     <remove-project name="LineageOS/android_external_icu" />
     <remove-project name="LineageOS/android_hardware_libhardware" />
-    <remove-project name="LineageOS/android_external_libavc" />
+    <remove-project name="platform/external/libavc" />
 
     <!-- Track our repos -->
     <project path="external/libavc" name="jedld/android_external_libavc" remote="github" revision="cm-13.0"/>
