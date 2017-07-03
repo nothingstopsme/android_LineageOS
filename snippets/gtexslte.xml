@@ -3,6 +3,7 @@
     <!-- Get rid of Lineage repos -->
     <remove-project name="LineageOS/android_system_bt" />
     <remove-project name="LineageOS/android_packages_apps_Bluetooth" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
     <remove-project name="LineageOS/android_bionic" />
     <remove-project name="LineageOS/android_frameworks_av" />
     <remove-project name="LineageOS/android_frameworks_base" />
@@ -10,8 +11,11 @@
     <remove-project name="LineageOS/android_system_core" />
     <remove-project name="LineageOS/android_external_icu" />
     <remove-project name="LineageOS/android_hardware_libhardware" />
+    <remove-project name="LineageOS/android_build" />
 
     <!-- Track our repos -->
+    <project path="build" name="jedld/android_build" remote="github" revision="cm-14.1"/>
+    <project path="packages/apps/Settings" name="jedld/android_packages_apps_Settings" remote="github" revision="cm-14.1"/>
     <project path="hardware/libhardware" name="jedld/android_hardware_libhardware" remote="github" revision="cm-14.1"/>
     <project path="system/bt" name="jedld/system_bt" remote="github" revision="master"/>
     <project path="packages/apps/Bluetooth" name="jedld/packages_apps_Bluetooth" remote="github" revision="master"/>
