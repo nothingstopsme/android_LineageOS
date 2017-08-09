@@ -12,8 +12,10 @@
     <remove-project name="LineageOS/android_external_icu" />
     <remove-project name="LineageOS/android_hardware_libhardware" />
     <remove-project name="LineageOS/android_build" />
+    <remove-project name="LineageOS/android" />
 
     <!-- Track our repos -->
+    <project path="android" name="jedld/android" remote="github" revision="cm-14.1"/>
     <project path="build" name="jedld/android_build" remote="github" revision="cm-14.1"/>
     <project path="packages/apps/Settings" name="jedld/android_packages_apps_Settings" remote="github" revision="cm-14.1"/>
     <project path="hardware/libhardware" name="jedld/android_hardware_libhardware" remote="github" revision="cm-14.1"/>
