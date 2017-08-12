@@ -45,7 +45,7 @@
     <project path="frameworks/native" name="jedld/android_frameworks_native" remote="github" revision="cm-14.1"/>
     <project path="system/core" name="jedld/android_system_core" remote="github" revision="cm-14.1" />
     <project path="system/sepolicy" name="jedld/android_system_sepolicy" remote="github" revision="cm-14.1" />
-    <project path="android/vendor/cm" name="jedld/android_vendor_cm" remote="github" revision="cm-14.1"/>
+    <project path="vendor/cm" name="jedld/android_vendor_cm" remote="github" revision="cm-14.1"/>
     <project path="external/icu" name="jedld/android_external_icu" remote="github" revision="cm-14.1" />
     <project path="external/degas-mkbootimg" name="jedld/degas-mkbootimg" remote="github" revision="galaxy_tab_a_smt285" />
 
