@@ -13,6 +13,7 @@
     <remove-project name="LineageOS/android_hardware_libhardware" />
     <remove-project name="LineageOS/android_build" />
     <remove-project name="LineageOS/android" />
+    <remove-project name="LineageOS/android_system_sepolicy" />
 
     <!-- Track our repos -->
     <project path="android" name="jedld/android" remote="github" revision="cm-14.1"/>
@@ -30,6 +31,7 @@
     <project path="frameworks/av" name="jedld/android_frameworks_av" remote="github" revision="cm-14.1"/>
     <project path="frameworks/native" name="jedld/android_frameworks_native" remote="github" revision="cm-14.1"/>
     <project path="system/core" name="jedld/android_system_core" remote="github" revision="cm-14.1" />
+    <project path="system/sepolicy" name="jedld/android_system_sepolicy" remote="github" revision="cm-14.1" />
     <project path="external/icu" name="jedld/android_external_icu" remote="github" revision="cm-14.1" />
 
     <!-- Track ThemeInterfacer -->
