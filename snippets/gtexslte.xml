@@ -24,7 +24,9 @@
 
     <!-- Track our repos -->
     <project path="android" name="jedld/android" remote="github" revision="cm-14.1"/>
-    <project path="build" name="jedld/android_build" remote="github" revision="cm-14.1"/>
+    <project path="build" name="jedld/android_build" remote="github" revision="cm-14.1">
+      <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
     <project path="packages/apps/PackageInstaller" name="LineageOMS/android_packages_apps_PackageInstaller" remote="github" revision="cm-14.1"/>
     <project path="packages/apps/ExactCalculator" name="LineageOMS/android_packages_apps_ExactCalculator" remote="github" revision="cm-14.1"/>
     <project path="packages/apps/Contacts" name="LineageOMS/android_packages_apps_Contacts" remote="github" revision="cm-14.1"/>
