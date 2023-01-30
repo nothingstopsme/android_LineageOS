@@ -51,7 +51,7 @@
     <project path="external/degas-mkbootimg" name="jedld/degas-mkbootimg" remote="github" revision="galaxy_tab_a_smt285" />
 
 
-    <project path="customisation" name="nothingstopsme/lineage-14.1_patches_SM-T285YD" remote="github" revision="refs/heads/main"/>
+    <project path="customisation" name="nothingstopsme/LineageOS-14.1_patches_SM-T285YD" remote="github" revision="refs/heads/main"/>
 			<linkfile src="system/core" dest="system/core" />
 			<linkfile src="system/extras" dest="system/extras" />
 			<linkfile src="system/vold" dest="system/vold" />
