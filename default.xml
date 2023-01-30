@@ -507,8 +507,6 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
 
   <include name="snippets/cm.xml" />
-
-  <!-- Samsung gtexslte  -->
-  <include name="snippets/gtexslte.xml" />
+  <include name="snippets/gtexsltedd.xml" />
 
 </manifest>

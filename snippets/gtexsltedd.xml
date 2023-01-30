@@ -21,6 +21,12 @@
     <remove-project name="LineageOS/android_packages_apps_Contacts" />
     <remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
     <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+    
+		<remove-project name="LineageOS/android_system_extras" />
+		<remove-project name="LineageOS/android_system_vold" />
+		<remove-project name="LineageOS/android_external_f2fs-tools" />
+		<remove-project name="LineageOS/cm_platform_sdk"/>
+
 
     <!-- Track our repos -->
     <project path="android" name="jedld/android" remote="github" revision="cm-14.1"/>
@@ -37,20 +43,33 @@
     <project path="hardware/libhardware" name="jedld/android_hardware_libhardware" remote="github" revision="cm-14.1"/>
     <project path="system/bt" name="lineage-gtexslte/system_bt" remote="github" revision="aosp-7.1"/>
     <project path="packages/apps/Bluetooth" name="jedld/packages_apps_Bluetooth" remote="github" revision="master"/>
-    <project path="hardware/sprd" name="jedld/hardware_sprd" remote="github" revision="cm-14.1"/>
-    <project path="device/samsung/gtexslte" name="jedld/device_samsung_gtexslte" remote="github" revision="cm-14.1"/>
-    <project path="vendor/samsung/gtexslte" name="jedld/vendor_samsung_gtexslte" remote="github" revision="cm-14.1"/>
-    <project path="kernel/samsung/gtexslte" name="jedld/kernel_samsung_gtexslte" remote="github" revision="performance_2"/>
+    <project path="device/samsung/gtexsltedd" name="nothingstopsme/device_SM-T285YD" remote="github" revision="refs/heads/master"/>
+    <project path="kernel/samsung/gtexsltedd" name="nothingstopsme/kernel_SM-T285YD" remote="github" revision="refs/heads/idk"/>
     <project path="bionic" name="jedld/android_bionic" revision="gtexslte" remote="github"/>
-    <project path="frameworks/base" name="jedld/android_frameworks_base-1" remote="github" revision="cm-14.1"/>
-    <project path="frameworks/av" name="jedld/android_frameworks_av" remote="github" revision="cm-14.1"/>
-    <project path="frameworks/native" name="jedld/android_frameworks_native" remote="github" revision="cm-14.1"/>
-    <project path="system/core" name="jedld/android_system_core" remote="github" revision="cm-14.1" />
-    <project path="system/sepolicy" name="jedld/android_system_sepolicy" remote="github" revision="cm-14.1" />
     <project path="vendor/cm" name="jedld/android_vendor_cm" remote="github" revision="cm-14.1"/>
     <project path="external/icu" name="jedld/android_external_icu" remote="github" revision="cm-14.1" />
     <project path="external/degas-mkbootimg" name="jedld/degas-mkbootimg" remote="github" revision="galaxy_tab_a_smt285" />
 
+
+    <project path="customisation" name="nothingstopsme/lineage-14.1_patches_SM-T285YD" remote="github" revision="refs/heads/main"/>
+			<linkfile src="system/core" dest="system/core" />
+			<linkfile src="system/extras" dest="system/extras" />
+			<linkfile src="system/vold" dest="system/vold" />
+			<linkfile src="system/sepolicy" dest="system/sepolicy" />
+			<linkfile src="frameworks/av" dest="frameworks/av" />
+			<linkfile src="frameworks/base" dest="frameworks/base" />
+			<linkfile src="frameworks/native" dest="frameworks/native" />
+			<linkfile src="external/f2fs-tools" dest="external/f2fs-tools" />
+			<linkfile src="vendor/cmsdk" dest="vendor/cmsdk" />
+			<linkfile src="hardware/sprd" dest="hardware/sprd" />
+		</project>
+
     <!-- Track ThemeInterfacer -->
     <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+
+		<!--fixing bad projects by overwriting their revision-->
+		<extend-project path="packages/apps/ManagedProvisioning" name="LineageOS/android_packages_apps_ManagedProvisioning" revision="01eebf922cb5a6cef07e11631c9d0b82100509a3" />
+		<extend-project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" revision="21b5b3c3edd6dde44098aac75daa1f55d5a68f77" />
+		<extend-project path="external/chromium-webview" name="LineageOS/android_external_chromium-webview" revision="refs/heads/master"/>
+
 </manifest>
