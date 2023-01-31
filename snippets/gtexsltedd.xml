@@ -26,10 +26,6 @@
 		<remove-project name="LineageOS/android_system_extras_su" />
 		<remove-project name="LineageOS/android_system_vold" />
 		<remove-project name="LineageOS/android_external_f2fs-tools" />
-		<remove-project name="LineageOS/cm_platform_sdk"/>
-		<remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
-		<remove-project name="LineageOS/android_packages_apps_WundergroundWeatherProvider" />
-		<remove-project name="LineageOS/android_packages_apps_YahooWeatherProvider" />
 
 
     <!-- Track our repos -->
@@ -64,13 +60,9 @@
 			<linkfile src="frameworks/base" dest="frameworks/base" />
 			<linkfile src="frameworks/native" dest="frameworks/native" />
 			<linkfile src="external/f2fs-tools" dest="external/f2fs-tools" />
-			<linkfile src="vendor/cmsdk" dest="vendor/cmsdk" />
 			<linkfile src="hardware/sprd" dest="hardware/sprd" />
 		</project>
 		<project path="customisation/system/extras/su" name="LineageOS/android_system_extras_su" />
-		<project path="customisation/vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
-	  <project path="customisation/vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="LineageOS/android_packages_apps_WundergroundWeatherProvider" />
-		<project path="customisation/vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="LineageOS/android_packages_apps_YahooWeatherProvider" />
 
 
     <!-- Track ThemeInterfacer -->
