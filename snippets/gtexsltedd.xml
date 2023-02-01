@@ -23,7 +23,6 @@
     <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
     
 		<remove-project name="LineageOS/android_system_extras" />
-		<remove-project name="LineageOS/android_system_extras_su" />
 		<remove-project name="LineageOS/android_system_vold" />
 		<remove-project name="LineageOS/android_external_f2fs-tools" />
 
@@ -43,26 +42,23 @@
     <project path="hardware/libhardware" name="jedld/android_hardware_libhardware" remote="github" revision="cm-14.1"/>
     <project path="system/bt" name="lineage-gtexslte/system_bt" remote="github" revision="aosp-7.1"/>
     <project path="packages/apps/Bluetooth" name="jedld/packages_apps_Bluetooth" remote="github" revision="master"/>
-    <project path="device/samsung/gtexsltedd" name="nothingstopsme/device_SM-T285YD" remote="github" revision="refs/heads/master"/>
-    <project path="kernel/samsung/gtexsltedd" name="nothingstopsme/kernel_SM-T285YD" remote="github" revision="refs/heads/idk"/>
     <project path="bionic" name="jedld/android_bionic" revision="gtexslte" remote="github"/>
     <project path="vendor/cm" name="jedld/android_vendor_cm" remote="github" revision="cm-14.1"/>
     <project path="external/icu" name="jedld/android_external_icu" remote="github" revision="cm-14.1" />
     <project path="external/degas-mkbootimg" name="jedld/degas-mkbootimg" remote="github" revision="galaxy_tab_a_smt285" />
 
 
-    <project path="customisation" name="nothingstopsme/LineageOS-14.1_patches_SM-T285YD" remote="github" revision="refs/heads/main">
-			<linkfile src="system/core" dest="system/core" />
-			<linkfile src="system/extras" dest="system/extras" />
-			<linkfile src="system/vold" dest="system/vold" />
-			<linkfile src="system/sepolicy" dest="system/sepolicy" />
-			<linkfile src="frameworks/av" dest="frameworks/av" />
-			<linkfile src="frameworks/base" dest="frameworks/base" />
-			<linkfile src="frameworks/native" dest="frameworks/native" />
-			<linkfile src="external/f2fs-tools" dest="external/f2fs-tools" />
-			<linkfile src="hardware/sprd" dest="hardware/sprd" />
-		</project>
-		<project path="customisation/system/extras/su" name="LineageOS/android_system_extras_su" />
+    <project path="system/core" name="nothingstopsme/android_system_core" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="system/extras" name="nothingstopsme/android_system_extras" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="system/vold" name="nothingstopsme/android_system_vold" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="system/sepolicy" name="nothingstopsme/android_system_sepolicy" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="frameworks/av" name="nothingstopsme/android_frameworks_av" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="frameworks/base" name="nothingstopsme/android_frameworks_base" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="frameworks/native" name="nothingstopsme/android_frameworks_native" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="external/f2fs-tools" name="nothingstopsme/android_external_f2fs-tools" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="hardware/sprd" name="nothingstopsme/android_hardware_sprd" remote="github" revision="refs/heads/cm-14.1_SM-T285YD"/>
+    <project path="device/samsung/gtexsltedd" name="nothingstopsme/device_SM-T285YD" remote="github" revision="refs/heads/master"/>
+    <project path="kernel/samsung/gtexsltedd" name="nothingstopsme/kernel_SM-T285YD" remote="github" revision="refs/heads/idk"/>
 
 
     <!-- Track ThemeInterfacer -->
