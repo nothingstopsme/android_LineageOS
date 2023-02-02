@@ -1,8 +1,69 @@
-LineageOS
-===========
+# LineageOS (cm-14.1) for SM-T285YD
 
-Submitting Patches
-------------------
+## Warning
+
+There is no warranty regarding the reliablity and viability of this version of OS and all its available features. Before installing, please think twice about the potential danger, including but not limited to, losing your data and bricking your device, and use it at your own risk.
+
+
+## Acknowledgement
+
+It is the previous works by [jedld](https://github.com/jedld) and [ZIDAN44](https://github.com/ZIDAN44) that make this project possible;
+therefore huge credit to them.
+
+## How to Build/Install
+
+1. Follow the instructions [here](https://forum.xda-developers.com/t/guide-build-lineageos-how-to-use-github.3551484/) up to step 11 (included) to setup your build environment. Note that you might need to adjust some of the steps based on the linux distribution run on your build machine; also skip step 6~9 for now as they will be elaborated on later.
+
+2. Get a copy of the source code (the entire process might take a long while):
+
+```bash
+ mkdir your_build_root
+ cd your_build_root
+ repo init -u https://github.com/nothingstopsme/android_LineageOS.git -b cm-14.1_SM-T285YD
+ repo sync
+```
+
+3. Prepare device-specific settings:
+
+```bash
+# at your_build_root
+source build/envsetup.sh
+breakfirst lineage_gtexsltedd
+```
+
+4. Build from the source code:
+
+```bash
+# at your_build_root
+make bootimage systemimage
+```
+
+Note that compared with `lunch`, the command above only generates boot.img and system.img (recovery.img as well, but it seems not working and remains my future work),
+rather than going through the full process to create the installation package.
+
+5. Once the "make" completes successfully, create a tarball of those two images:
+```bash
+# at your_build_root
+cd out/target/product/gtexsltedd
+tar -cvf ap.tar -C ./ boot.img system.img
+```
+
+6. Flash that ap.tar into your SM-T285YD via Samsung Odin tool. This will replace the old system, and it is advised to **erase the data** currently stored on your device before proceeding this step.
+
+## Troubleshooting
+
+* If you encounter a build error relating to "locale", the following command might help:
+```bash
+# in the same shell that you are to execute "make"
+export LC_ALL=C.UTF-8
+```
+
+
+<br/><br/><br/><br/>
+## Documentation from LineageOS
+
+### Submitting Patches
+
 
 Patches are always welcome!  Please submit your patches via LineageOS Gerrit.
 You can do this by using these commands:
@@ -12,7 +73,7 @@ You can do this by using these commands:
     (Go to repo you are patching, make your changes and commit)
     cmgerrit <for(new)/changes(patch set)> <branch/change-id>
 
-    repo start cm-14.1 .
+    repo start *branch_name* .
     (Make your changes and commit)
     repo upload .
 
@@ -25,15 +86,14 @@ Commit your patches in a single commit. Squash multiple commits using this comma
 To view the status of your and others' patches, visit [LineageOS Code Review](https://review.lineageos.org/)
 
 
-Getting Started
----------------
+### Getting Started
 
 To get started with Android/LineageOS, you'll need to get
 familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 
-    repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+    repo init -u git://github.com/LineageOS/android.git -b *branch_name*
 
 Then to sync up:
 
@@ -42,8 +102,7 @@ Then to sync up:
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions.
 
 
-Buildbot
---------
+### Buildbot
 
 All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
 
